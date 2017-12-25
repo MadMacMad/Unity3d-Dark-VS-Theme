@@ -1,0 +1,42 @@
+{
+	"name": "Unity3dDark",
+	"version": "1.0.0",
+	"displayName": "Dark Theme for Unity3d",
+	"description": "🔥 Dark Theme for Unity3d by S Hollekamp.",
+	"publisher": "holle",
+	"icon": "images/logo.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/wesbos/cobalt2-vscode"
+	},
+	"galleryBanner": {
+		"color": "#193549",
+		"theme": "dark"
+	},
+	"categories": [
+		"Themes"
+	],
+	"keywords": [
+		"VSCode",
+		"Themes"
+	],
+	"engines": {
+		"vscode": "^1.15.0"
+	},
+	"scripts": {
+		"start": "nodemon --exec vsce package"
+	},
+	"contributes": {
+		"themes": [
+			{
+				"label": "Unity3dDark",
+				"uiTheme": "vs-dark",
+				"path": "./theme/darkunity3d.json"
+			}
+		]
+	},
+	"dependencies": {
+		"nodemon": "^1.12.0",
+		"vsce": "^1.30.0"
+	}
+}
